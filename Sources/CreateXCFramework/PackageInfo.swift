@@ -70,7 +70,7 @@ struct PackageInfo {
 
         self.toolchain = try UserToolchain(destination: try .hostDestination())
 
-        let resources = try UserManifestResources(swiftCompiler: self.toolchain.swiftCompiler)
+        let resources = try UserManifestResources(swiftCompiler: self.toolchain.swiftCompiler, swiftCompilerFlags: [])
         let loader = ManifestLoader(manifestResources: resources)
         self.workspace = Workspace.create(forRootPackage: root, manifestLoader: loader)
 
@@ -79,6 +79,7 @@ struct PackageInfo {
         self.manifest = try ManifestLoader.loadManifest (
             packagePath: root,
             swiftCompiler: self.toolchain.swiftCompiler,
+            swiftCompilerFlags: [],
             packageKind: .root
         )
     }
@@ -214,7 +215,7 @@ enum SupportedPlatforms {
     case packageValid (plan: [SupportedPlatform])
 }
 
-extension SupportedPlatform: Equatable, Comparable {
+extension SupportedPlatform: Comparable {
     public static func == (lhs: SupportedPlatform, rhs: SupportedPlatform) -> Bool {
         return lhs.platform == rhs.platform && lhs.version == rhs.version
     }

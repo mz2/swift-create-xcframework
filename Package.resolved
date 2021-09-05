@@ -11,11 +11,20 @@
         }
       },
       {
+        "package": "swift-driver",
+        "repositoryURL": "https://github.com/apple/swift-driver.git",
+        "state": {
+          "branch": "release/5.4",
+          "revision": "93e8b927225a62b963ebe13ab11e04192fa8a67b",
+          "version": null
+        }
+      },
+      {
         "package": "llbuild",
         "repositoryURL": "https://github.com/apple/swift-llbuild.git",
         "state": {
-          "branch": "release/5.3",
-          "revision": "ef2e9ba657fd0a4e6e25fff05051b328bf27aeaf",
+          "branch": "release/5.4",
+          "revision": "eb56a00ed9dfd62c2ce4ec86183ff0bc0afda997",
           "version": null
         }
       },
@@ -23,8 +32,8 @@
         "package": "SwiftPM",
         "repositoryURL": "https://github.com/apple/swift-package-manager.git",
         "state": {
-          "branch": "swift-5.3.3-RELEASE",
-          "revision": "06d96d033ffdcbf97b741ed79d62127c4fe419b3",
+          "branch": "swift-5.4.2-RELEASE",
+          "revision": "374cdb42d7b146837de70489a04c5df956092685",
           "version": null
         }
       },
@@ -32,9 +41,18 @@
         "package": "swift-tools-support-core",
         "repositoryURL": "https://github.com/apple/swift-tools-support-core.git",
         "state": {
-          "branch": "release/5.3",
-          "revision": "8c3dfd42a36d0416345143eae4567d9314c12246",
+          "branch": "release/5.4",
+          "revision": "d7bd4375c26e7dab2c17791cfa06f9b981d02339",
           "version": null
+        }
+      },
+      {
+        "package": "Yams",
+        "repositoryURL": "https://github.com/jpsim/Yams.git",
+        "state": {
+          "branch": null,
+          "revision": "9ff1cc9327586db4e0c8f46f064b6a82ec1566fa",
+          "version": "4.0.6"
         }
       }
     ]
